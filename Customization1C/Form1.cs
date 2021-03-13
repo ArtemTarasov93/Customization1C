@@ -28,10 +28,10 @@ namespace Customization1C
 
         private void Customization1C_Load(object sender, EventArgs e) //Инициализация формы
         {
-            string VersionPO = "2.000";
+            string VersionPO = "2.0.0.0";
             if (Directory.Exists(Shara))
             {
-                string VersionPOShara = File.ReadAllText(Shara + "\\VersionCustomization1C.txt");
+                string VersionPOShara = FileVersionInfo.GetVersionInfo(Shara + "\\Настройка 1С.exe").ProductVersion;
                 if (VersionPOShara != VersionPO)
                 {
                     Process.Start(Shara + "\\UpdaterCustomization1C.exe");
