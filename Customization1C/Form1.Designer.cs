@@ -29,6 +29,7 @@ namespace Customization1C
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customization1C));
             this.StatusID = new System.Windows.Forms.Label();
             this.StatusPC = new System.Windows.Forms.Label();
             this.Instruction = new System.Windows.Forms.Label();
@@ -127,6 +128,7 @@ namespace Customization1C
             this.Controls.Add(this.Instruction);
             this.Controls.Add(this.StatusPC);
             this.Controls.Add(this.StatusID);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Customization1C";
             this.Text = "Настройка 1С";
             this.Load += new System.EventHandler(this.Customization1C_Load);
