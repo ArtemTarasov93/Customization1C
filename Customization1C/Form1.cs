@@ -87,7 +87,14 @@ namespace Customization1C
                     Instruction.ForeColor = Color.Green;
                     StatusOrganization.ForeColor = Color.Green;
                     StatusID.Text = "ID ПВЗ: " + IdPvz;
-                    StatusOrganization.Text = "Организация: " + Organization;
+                    if (Organization == "kupishoes")
+                    {
+                        StatusOrganization.Text = "Организация: Купишуз";
+                    }
+                    else if (Organization == "puru")
+                    {
+                        StatusOrganization.Text = "Организация: Пикап";
+                    }
                     Instruction.Text = "Нажмите кнопку Внести настройки";
                 }
                 else
