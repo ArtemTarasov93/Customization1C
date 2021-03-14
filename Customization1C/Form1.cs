@@ -170,7 +170,7 @@ namespace Customization1C
                     {
                         Directory.Delete(Cache[i], true);
                     }
-                    MessageBox.Show("Кеш отчищен", "Настройка 1С");
+                    MessageBox.Show("Кеш приложения отчищен", "Настройка 1С");
                     break;
                 case DialogResult.No:
                     break;
