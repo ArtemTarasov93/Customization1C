@@ -28,7 +28,7 @@ namespace Customization1C
 
         private void Customization1C_Load(object sender, EventArgs e) //Инициализация формы
         {
-            string VersionPO = "2.0.0.0";
+            string VersionPO = "2.0.0.1";
             if (Directory.Exists(Shara))
             {
                 string VersionPOShara = FileVersionInfo.GetVersionInfo(Shara + "\\Настройка 1С.exe").ProductVersion;
