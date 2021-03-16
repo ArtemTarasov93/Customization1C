@@ -42,7 +42,7 @@ namespace Customization1C
             string LogFile = $@"C:\Files\KKM\{ComputerName}_Customization1C.txt";
             string TimePC = $"{DateTime.Now:HH:mm:ss}";
             string IdPvz = "";
-            OleDbConnection OleDbConnection = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\office\service\LanDesk\Soft\Softnolandesk\KKM\DatabaseKKM.mdb");
+            OleDbConnection OleDbConnection = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\office\service\LanDesk\Soft\Softnolandesk\KKM\DB\DatabaseKKM.mdb");
             StatusPO.Text = $"Версия: {VersionPO}";
             StatusPC.Text = $"Имя компьютера:\r\n"+ ComputerName;
             string OleBdSelect = $"SELECT Computers.Computer_name, " +
@@ -177,7 +177,7 @@ namespace Customization1C
             }
         }
 
-        private void Helper_Click(object sender, EventArgs e)
+        private void Helper_Click(object sender, EventArgs e) //Кнопка "?"
         {
             if (!Directory.Exists(@"C:\Files\1s"))
             {
